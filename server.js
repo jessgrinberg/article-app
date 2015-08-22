@@ -155,7 +155,7 @@ var app = express(); // defining our app as an instance of express
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var config = require('./app/config/config');
-var environmentSettings = config();
+var environmentSettings = config.config();
 
 mongoose.connect(environmentSettings.db)
 
